@@ -1,0 +1,12 @@
+{
+  "name": "01_basics_pp",
+  "version": "1.0.0",
+  "description": "## Dieser Text ist ein Beispieltext.",
+  "main": "src/01_hello_world.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
