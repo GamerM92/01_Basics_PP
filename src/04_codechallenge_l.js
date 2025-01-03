@@ -11,14 +11,23 @@ Geben Sie die Summe der Zahlen in die Konsole aus:
 */
 
 const prompt = require('prompt-sync')({sigint: true});
-const zahl1 = Number(prompt("Geben Sie die erste Zahl ein: "));
-const zahl2 = Number(prompt("Geben Sie die zweite Zahl ein: "));
-console.log("");
-const summe = zahl1 + zahl2
 
+// Zahleneingabe
+console.log("");
+var zahl = Number(prompt("Geben Sie die erste Zahl ein: "));
+const a = zahl;
+var zahl = Number(prompt("Geben Sie die zweite Zahl ein: "));
+const b = zahl;
+
+// Berechnung der Summe von a und b
+console.log("");
+const summe = a + b
+
+// Überprüfung ob Summe
 if (isNaN(summe)) {
     console.log("Ein ungültiges Zeichen wurde eingegeben");
 }
 else {
-console.log("Die Summe von " + zahl1 + " und " + zahl2 + " ist " + summe);
+console.log("Die Summe von " + a + " und " + b + " ist " + summe);
 }
+console.log("");
