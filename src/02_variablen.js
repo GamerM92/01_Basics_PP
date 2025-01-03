@@ -1,9 +1,8 @@
 // Zeilenkommentar
 
-console.log("Frohes Neues, du Kek");
-
 /**
- 
-Blockkommentar
- 
+    Blockkommentar
  */
+
+/***** Variablen 01 *******/
+
