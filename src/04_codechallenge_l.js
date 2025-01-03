@@ -14,11 +14,11 @@ const prompt = require('prompt-sync')({sigint: true});
 const zahl1 = Number(prompt("Geben Sie die erste Zahl ein: "));
 const zahl2 = Number(prompt("Geben Sie die zweite Zahl ein: "));
 console.log("");
-const Summe = zahl1 + zahl2
+const summe = zahl1 + zahl2
 
-if (isNaN(Summe)) {
+if (isNaN(summe)) {
     console.log("Ein ungültiges Zeichen wurde eingegeben");
 }
 else {
-console.log("Die Summe von " + zahl1 + " und " + zahl2 + " ist " + Summe);
+console.log("Die Summe von " + zahl1 + " und " + zahl2 + " ist " + summe);
 }
