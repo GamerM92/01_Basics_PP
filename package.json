@@ -2,7 +2,7 @@
   "name": "01_basics_pp",
   "version": "1.0.0",
   "description": "## Dieser Text ist ein Beispieltext.",
-  "main": "src/06_controlflow.js",
+  "main": "src/07_Codechallenge_II.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
