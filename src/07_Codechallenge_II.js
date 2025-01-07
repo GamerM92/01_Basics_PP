@@ -32,7 +32,7 @@ if (/^[a-zA-Z]+(-[a-zA-Z]+[a-zA-Z])*$/.test(name)) {
     console.log(""); console.log("--------------------")
     return;
 }
-let age = Number(prompt("Gib das Alter von " + name + " ein: "));
+let age = parseInt(prompt("Gib das Alter von " + name + " ein: "));
 console.log("")
 console.log("")
 if (isNaN(age))
