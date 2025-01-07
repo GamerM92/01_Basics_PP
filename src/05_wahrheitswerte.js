@@ -27,3 +27,4 @@ isJohnEqual = (ageJohn == ageMark);
 
 console.log("isJohnOlder: " + isJohnOlder);
 console.log("isJohnEqual: " + isJohnEqual);
+
