@@ -24,6 +24,7 @@ Alter 13-17 // Cola
 const prompt = require('prompt-sync')({sigint: true});
 // console.log("")
 const name = prompt("Bitte gib einen Namen ein: ");
+
 if (/^[a-zA-Z]+(-[a-zA-Z]+[a-zA-Z])*$/.test(name)) {
     
 } else {
