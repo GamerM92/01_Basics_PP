@@ -16,13 +16,13 @@ Alter 13-17 // Cola
 
 /* Getränke-Challenge */
 
-// console.log("")
-// console.log("--------------------")
-// console.log("LADE GETRÄNKE CHALLENGE")
-// console.log("--------------------")
-// console.log("GETRÄNKE CHALLENGE GELADEN")
+console.log("")
+console.log("--------------------")
+console.log("LADE GETRÄNKE CHALLENGE")
+console.log("--------------------")
+console.log("GETRÄNKE CHALLENGE GELADEN")
 const prompt = require('prompt-sync')({sigint: true});
-// console.log("")
+console.log("")
 const name = prompt("Bitte gib einen Namen ein: ");
 
 if (/^[a-zA-Z]+(-[a-zA-Z]+[a-zA-Z])*$/.test(name)) {
