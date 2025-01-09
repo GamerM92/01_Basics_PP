@@ -34,11 +34,11 @@ function getNum2() {
 // agreement: "+","-","*",":","/"
 // output(calculator(a,b,op));
 function calculator(a,b,op) {
-    // if (isNaN(a) || isNaN(b)) { // Wenn a oder b "isNaN" ist...
-    //     return "Keine Rechnung möglich"
-    // }
-    // else
-    // {
+    if (isNaN(a) || isNaN(b)) { // Wenn a oder b "isNaN" ist...
+        return "Keine Rechnung möglich"
+    }
+    else
+    {
     switch (op) {
         case "+":
             return add(a,b);
@@ -53,7 +53,7 @@ function calculator(a,b,op) {
             return raise(a,b);
         default:
             return ERROR_STR_CAL;
-        // }    
+        }    
     }
 }
 

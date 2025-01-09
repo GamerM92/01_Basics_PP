@@ -45,7 +45,7 @@ function getNumber(figure) {
 
     let displayStr = INFO_STR_PRE_NUM + figure + INFO_STR_POST_NUM;
     let inputStr = prompt(displayStr) 
-    let num = parseInt(inputStr);
+    let num = Number(inputStr);
 
    
     // if num is NOT a number AND user DIDN'T click at Abbrechen

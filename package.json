@@ -2,7 +2,7 @@
   "name": "01_basics_pp",
   "version": "1.0.0",
   "description": "## Dieser Text ist ein Beispieltext.",
-  "main": "src/09_funktionen_II.js",
+  "main": "src/09(Example)_funktionen_II.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
