@@ -3,24 +3,45 @@
 0. a+b | a-b | a*b | a/b  --> Ergebnis c 
 
 1. Dateneingabe + -überprüfung :  
-2. Auswahl Rechenart : 
-3. Fkt. Grundrechenarten : 
-4. Ausgabe in Konsole : 
+2. Auswahl Rechenart : check
+3. Fkt. Grundrechenarten : check
+4. Ausgabe in Konsole : check
 */
 
 const ERROR_STR_DIV = "Divison durch 0 nicht möglich";
 const ERROR_STR_CAL = "Ungültiger Operator";
 
+const prompt = require('prompt-sync')({sigint: true});
+// calculator(a = prompt("Zahl 1 eingeben: "),b = prompt("Zahl 2 eingeben: "),op = prompt("Operator eingeben: "));
+
+startApp()
+function startApp() {
+    output(calculator(getNum1(),getNum2(),getOp()))
+}
+
+function getNum1() {
+    return Number(prompt("Num1: "))
+}
+
+function getNum2() {
+    return Number(prompt("Num2: "))
+}
+
+function getOp() {
+    return prompt("OP?:" )
+}
+
 // module: calculator | tests:
 // agreement: "+","-","*",":","/"
-output(calculator(3,2,"+"));
-output(calculator(3,2,"-"));
-output(calculator(3,2,"*"));
-output(calculator(3,2,":"));
-output(calculator(3,2,"/"));
-output(calculator(3,0,"/"));
-output(calculator(3,2,"#?!"));
+// output(calculator(a,b,op));
+// output(calculator(3,2,"-"));
+// output(calculator(3,2,"*"));
+// output(calculator(3,2,":"));
+// output(calculator(3,2,"/"));
+// output(calculator(3,0,"/"));
+// output(calculator(3,2,"#?!"));
 function calculator(a,b,op) {
+    // if (isNaN(a) OR isNaN(b)) {
     switch (op) {
         case "+":
             return add(a,b);
@@ -33,6 +54,7 @@ function calculator(a,b,op) {
             return divide(a,b);
         default:
             return ERROR_STR_CAL;
+        // }    
     }
 }
 
