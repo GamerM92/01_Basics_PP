@@ -12,7 +12,6 @@ const ERROR_STR_DIV = "Divison durch 0 nicht möglich";
 const ERROR_STR_CAL = "Ungültiger Operator";
 
 const prompt = require('prompt-sync')({sigint: true});
-// calculator(a = prompt("Zahl 1 eingeben: "),b = prompt("Zahl 2 eingeben: "),op = prompt("Operator eingeben: "));
 
 startApp()
 function startApp() {
@@ -20,28 +19,26 @@ function startApp() {
 }
 
 function getNum1() {
-    return Number(prompt("Num1: "))
-}
-
-function getNum2() {
-    return Number(prompt("Num2: "))
+    return Number(prompt("Erste Zahl eingeben: "))
 }
 
 function getOp() {
-    return prompt("OP?:" )
+    return prompt("Gib einen gültigen Operator ein [ + | - | * | : | / | **]:" )
+}
+
+function getNum2() {
+    return Number(prompt("Zweite Zahl eingeben: "))
 }
 
 // module: calculator | tests:
 // agreement: "+","-","*",":","/"
 // output(calculator(a,b,op));
-// output(calculator(3,2,"-"));
-// output(calculator(3,2,"*"));
-// output(calculator(3,2,":"));
-// output(calculator(3,2,"/"));
-// output(calculator(3,0,"/"));
-// output(calculator(3,2,"#?!"));
 function calculator(a,b,op) {
-    // if (isNaN(a) OR isNaN(b)) {
+    // if (isNaN(a) || isNaN(b)) { // Wenn a oder b "isNaN" ist...
+    //     return "Keine Rechnung möglich"
+    // }
+    // else
+    // {
     switch (op) {
         case "+":
             return add(a,b);
@@ -52,12 +49,22 @@ function calculator(a,b,op) {
         case ":":
         case "/":
             return divide(a,b);
+        case "**":
+            return raise(a,b);
         default:
             return ERROR_STR_CAL;
         // }    
     }
 }
 
+// module: raise a ** b | test:
+// output(raise(4,2)); -> Ergebnis 16
+// output(raise(2,0)); -> Ergebnis 1
+// output(raise(0,5)); -> Ergebnis 0
+// output(raise(10,5)); -> Ergebnis 100000
+function raise(a,b) {
+    return a ** b;
+}
 
 // module: division a / b | test:
 // output(divide(4,2));
@@ -67,13 +74,6 @@ function calculator(a,b,op) {
 // output(divide(3,0));
 // output(divide(0,0));
 function divide(a,b) {
-    
-    // if (b == 0) {
-    //     return ERROR_STR_DIV;
-    // }    
-    //     return a / b
-    
-    
     if (b != 0) {
         return a / b;
     }
