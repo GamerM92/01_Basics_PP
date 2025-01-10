@@ -2,7 +2,7 @@
   "name": "01_basics_pp",
   "version": "1.0.0",
   "description": "## Dieser Text ist ein Beispieltext.",
-  "main": "src/11_Arrays.I.js",
+  "main": "src/12_CodeChallenge_III.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

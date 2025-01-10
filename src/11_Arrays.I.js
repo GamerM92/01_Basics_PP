@@ -70,12 +70,7 @@ output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
 function getSentenceArr(arr) {
     const GAP = " ";
     const PUNCT = ".";
-    
-    // for (let i = 0; i < arr.length; i++) 
-    //     {
-            return arr.join(GAP) + PUNCT;
-        // }
-
+    return arr.join(GAP) + PUNCT;
 }
 
 
