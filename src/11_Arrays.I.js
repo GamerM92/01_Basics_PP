@@ -67,14 +67,14 @@ for (let i = 0; i < arr.length; i++)
 // }
 output(getSentenceArr(["Ich","bin","Max","Mütze"]));
 output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
-function getSentenceArr(words) {
+function getSentenceArr(arr) {
     const GAP = " ";
     const PUNCT = ".";
     
-    for (let i = 0; i < words.length; i++) 
-        {
-            return words.join(GAP) + PUNCT;
-        }
+    // for (let i = 0; i < arr.length; i++) 
+    //     {
+            return arr.join(GAP) + PUNCT;
+        // }
 
 }
 
