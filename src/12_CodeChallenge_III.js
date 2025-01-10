@@ -32,7 +32,7 @@ function getSentence(words, type) {
             sentence += "!";
             break;
         default:
-            throw new Error("Ungültiger Satztyp");
+            return "Ungültiger Satztyp"
     }
     
     return sentence;
