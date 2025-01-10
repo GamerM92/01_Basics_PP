@@ -23,7 +23,7 @@ const INFO_STR_POST_NUM = " number: ";
 let isNotAborted; 
 
 // application / App
-startApp();
+// startApp();
 function startApp() {
     let num1,num2,op;
     isNotAborted = true;
@@ -40,7 +40,7 @@ function startApp() {
 }
 
 // module: data input | test:
-//  output(getNumber("1st"));
+ output(getNumber("1st"));
 function getNumber(figure) {
 
     let displayStr = INFO_STR_PRE_NUM + figure + INFO_STR_POST_NUM;
