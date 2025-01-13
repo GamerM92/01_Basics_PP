@@ -17,8 +17,12 @@ output(getSentence(["Ich","bin"],"E"));
 output(getSentence(["Ich","hätt","gern","die","Platt","von","dene","zwei","diwodaso","Spass","mache,","habbe","Sie","die"],"Q"));
 
 function getSentence(words, type) {
-    // Die Wörter aus dem Array zu einem Satz zusammenfügen
-    let sentence = words.join(" ");
+    // Die Wörter manuell zu einem Satz zusammenfügen
+    let sentence = "";
+    for (let i = 0; i < words.length; i++) {
+        // Leerzeichen hinzufügen, außer beim letzten Wort
+        sentence += words[i] + (i < words.length - 1 ? " " : "");
+    }
     
     // Abhängig vom Typ das richtige Satzzeichen hinzufügen
     switch (type) {
@@ -32,7 +36,7 @@ function getSentence(words, type) {
             sentence += "!";
             break;
         default:
-            return "Ungültiger Satztyp"
+            return "Ungültiger Satztyp";
     }
     
     return sentence;
